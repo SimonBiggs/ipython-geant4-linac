@@ -21,7 +21,7 @@ Open terminal (ctrl + alt + T)
     
     sudo ~/github/ipython-geant4-linac/install.sh
 
-NOTE: This will take quite some time and use quite a bit of internet data
+NOTE: This will take quite some time and use quite a bit of internet data. also, if you know what you are doing you should read through the install.sh before running it, in case there are any options that disagree with your environment. if you are starting from scratch and don't mind where things are installed the above method is for you.
 
 Once complete type:
 
