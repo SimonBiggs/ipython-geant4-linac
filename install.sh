@@ -153,29 +153,3 @@ exit
 
 cp -r ~/GEANT4/source/geant4.9.6.p03/environments/g4py/python34/lib/* /usr/local/lib/python3.4/dist-packages/
 
-
-# ===========================
-# Install Python/GEANT4 Linac
-# ===========================
-	
-apt-get -y install git nohup
-
-su $SUDO_USER
-
-	mkdir ~/github
-
-	cd ~/github
-	git clone https://github.com/SimonBiggs/ipython-geant4-linac.git
-	# or for SSH -- git clone git@github.com:SimonBiggs/ipython-geant4-linac.git 
-
-	mkdir ~/github/linac/linac/g4/build
-	cd ~/github/linac/linac/g4/build
-
-	cmake ../ -DPYTHON_INCLUDE_DIR=/usr/include/python3.4m -DPYTHON_INCLUDE_DIR2=/usr/include/x86_64-linux-gnu/python3.4m -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.4m.so -DBoost_PYTHON_LIBRARY_DEBUG=/usr/lib/x86_64-linux-gnu/libboost_python-py34.so -DBoost_PYTHON_LIBRARY_RELEASE=/usr/lib/x86_64-linux-gnu/libboost_python-py34.so
-
-	make
-
-	cd ~/github/linac
-	nohup ipython3 notebook &
-	
-exit
