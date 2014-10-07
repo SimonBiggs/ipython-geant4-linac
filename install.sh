@@ -89,8 +89,6 @@ su $SUDO_USER -c "echo ' . geant4.sh' >> ~/.bashrc"
 # Install GEANT4 Python Environment
 # =================================
 
-fc-cache -f -v
-
 su $SUDO_USER -c "cd ~/GEANT4/source/geant4.9.6.p03/environments/g4py
 sed -e 's/lib64/lib/g' configure > configure_edit_lib64
 sed -e 's/python3.3/python3.4 python3.3/g' configure_edit_lib64 > configure_edit_lib64_python34
@@ -109,23 +107,23 @@ make -j`grep -c processor /proc/cpuinfo`
 make install
 
 cd ~/GEANT4/source/geant4.9.6.p03/environments/g4py/python34/lib/Geant4
-python3 -c 'import py_compile; py_compile.compile( ""colortable.py"" )'
-python3 -c 'import py_compile; py_compile.compile( ""g4thread.py"" )'
-python3 -c 'import py_compile; py_compile.compile( ""g4viscp.py"" )'
-python3 -c 'import py_compile; py_compile.compile( ""hepunit.py"" )'
-python3 -c 'import py_compile; py_compile.compile( ""__init__.py"" )'
-python3 -O -c 'import py_compile; py_compile.compile( ""colortable.py"" )'
-python3 -O -c 'import py_compile; py_compile.compile( ""g4thread.py"" )'
-python3 -O -c 'import py_compile; py_compile.compile( ""g4viscp.py"" )'
-python3 -O -c 'import py_compile; py_compile.compile( ""hepunit.py"" )'
-python3 -O -c 'import py_compile; py_compile.compile( ""__init__.py"" )'
+python3 -c 'import py_compile; py_compile.compile( \"colortable.py\" )'
+python3 -c 'import py_compile; py_compile.compile( \"g4thread.py\" )'
+python3 -c 'import py_compile; py_compile.compile( \"g4viscp.py\" )'
+python3 -c 'import py_compile; py_compile.compile( \"hepunit.py\" )'
+python3 -c 'import py_compile; py_compile.compile( \"__init__.py\" )'
+python3 -O -c 'import py_compile; py_compile.compile( \"colortable.py\" )'
+python3 -O -c 'import py_compile; py_compile.compile( \"g4thread.py\" )'
+python3 -O -c 'import py_compile; py_compile.compile( \"g4viscp.py\" )'
+python3 -O -c 'import py_compile; py_compile.compile( \"hepunit.py\" )'
+python3 -O -c 'import py_compile; py_compile.compile( \"__init__.py\" )'
 
 cd ~/GEANT4/source/geant4.9.6.p03/environments/g4py/python34/lib/g4py
-python3 -c 'import py_compile; py_compile.compile( ""emcalculator.py"" )'
-python3 -O -c 'import py_compile; py_compile.compile( ""emcalculator.py"" )'
-python3 -c 'import py_compile; py_compile.compile( ""mcscore.py"" )'
-python3 -O -c 'import py_compile; py_compile.compile( ""mcscore.py"" )'
-python3 -c 'import py_compile; py_compile.compile( ""__init__.py"" )'
-python3 -O -c 'import py_compile; py_compile.compile( ""__init__.py"" )'"
+python3 -c 'import py_compile; py_compile.compile( \"emcalculator.py\" )'
+python3 -O -c 'import py_compile; py_compile.compile( \"emcalculator.py\" )'
+python3 -c 'import py_compile; py_compile.compile( \"mcscore.py\" )'
+python3 -O -c 'import py_compile; py_compile.compile( \"mcscore.py\" )'
+python3 -c 'import py_compile; py_compile.compile( \"__init__.py\" )'
+python3 -O -c 'import py_compile; py_compile.compile( \"__init__.py\" )'"
 
 cp -r ~/GEANT4/source/geant4.9.6.p03/environments/g4py/python34/lib/* /usr/local/lib/python3.4/dist-packages/
