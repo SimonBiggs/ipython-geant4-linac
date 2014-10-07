@@ -17,9 +17,9 @@ Open terminal (ctrl + alt + T)
     
     mkdir ~/github
     cd ~/github
-	  git clone https://github.com/SimonBiggs/ipython-geant4-linac.git
-	  
-	  sudo ~/gihub/ipython-geant4-linac/install.sh
+    git clone https://github.com/SimonBiggs/ipython-geant4-linac.git
+    
+    sudo ~/gihub/ipython-geant4-linac/install.sh
 
 NOTE: This will take quite some time and use quite a bit of internet data
 
