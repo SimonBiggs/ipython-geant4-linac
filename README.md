@@ -21,7 +21,7 @@ Assuming you have Ubuntu 14.04 64-bit LTS follow the steps given here to create 
  * Geant4 9.6.3 with python3.4 environment
  * All required dependencies for the above three items
 
-Open terminal (ctrl + alt + T) and copy and paste in the following lines, followed by your password:
+Open terminal (ctrl + alt + T) and copy and paste in the following lines, followed by enter, then your password:
 
     sudo apt-get -y install git; \
     mkdir ~/github; \
@@ -69,7 +69,7 @@ Install Ubuntu 14.04 64-bit LTS inside the virtualbox
 
 Boot new Ubuntu machine
 
-Open terminal (ctrl + alt + T) and copy and paste in the following lines, followed by your password:
+Open terminal (ctrl + alt + T) and copy and paste in the following lines, followed by enter, then your password:
 
     sudo apt-get update; \
     sudo apt-get -y upgrade; \
