@@ -14,6 +14,8 @@ apt-get -y install cmake build-essential qt4-dev-tools libxmu-dev \
 libmotif-dev libexpat1-dev python3 python3-pip libboost-all-dev \
 xfonts-75dpi xfonts-100dpi
 
+fc-cache -f -v
+
 apt-get -y build-dep ipython3 ipython3-notebook python3-numpy \
 python3-scipy python3-matplotlib python3-pandas python3-nose
 
@@ -88,8 +90,6 @@ su $SUDO_USER -c "echo ' . geant4.sh' >> ~/.bashrc"
 # =================================
 # Install GEANT4 Python Environment
 # =================================
-
-fc-cache -f -v
 
 su $SUDO_USER -c "cd ~/GEANT4/source/geant4.9.6.p03/environments/g4py
 sed -e 's/lib64/lib/g' configure > configure_edit_lib64
