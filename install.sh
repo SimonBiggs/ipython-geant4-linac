@@ -74,7 +74,9 @@ cp -r * /usr/local/share/Geant4-9.6.3/data
 su $SUDO_USER -c "mkdir -p ~/GEANT4/build
 cd ~/GEANT4/build
 
-cmake ~/GEANT4/source/geant4.9.6.p03 -DGEANT4_BUILD_MULTITHREADED=ON -DGEANT4_USE_QT=ON -DGEANT4_USE_XM=ON -DGEANT4_USE_OPENGL_X11=ON -DGEANT4_USE_RAYTRACER_X11=ON -Wno-dev
+cmake ~/GEANT4/source/geant4.9.6.p03 -DGEANT4_BUILD_MULTITHREADED=ON \
+-DGEANT4_USE_QT=ON -DGEANT4_USE_XM=ON -DGEANT4_USE_OPENGL_X11=ON \
+-DGEANT4_USE_RAYTRACER_X11=ON -Wno-dev
 
 make -j`grep -c processor /proc/cpuinfo`"
 
@@ -96,7 +98,11 @@ chmod +x configure_edit_lib64_python34
 
 mkdir -p ~/GEANT4/source/geant4.9.6.p03/environments/g4py/python34
 
-./configure_edit_lib64_python34 linux64 --with-python3 --enable-openglxm --enable-raytracerx --enable-openglx --with-g4install-dir=/usr/local --with-boost-libdir=/usr/lib/x86_64-linux-gnu --with-boost-python-lib=boost_python-py34 --prefix=~/GEANT4/source/geant4.9.6.p03/environments/g4py/python34
+./configure_edit_lib64_python34 linux64 --with-python3 --enable-openglxm \
+--enable-raytracerx --enable-openglx --with-g4install-dir=/usr/local \
+--with-boost-libdir=/usr/lib/x86_64-linux-gnu \
+--with-boost-python-lib=boost_python-py34 \
+--prefix=~/GEANT4/source/geant4.9.6.p03/environments/g4py/python34
 
 make -j`grep -c processor /proc/cpuinfo`
 
