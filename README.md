@@ -43,9 +43,9 @@ Boot new Ubuntu machine
 Open terminal (ctrl + alt + T)
 
     sudo apt-get update
-    sudo apt-get upgrade
+    sudo apt-get -y upgrade
 
-    sudo apt-get install build-essential dkms
+    sudo apt-get -y install build-essential dkms
     sudo reboot
 
 (Virtualbox menu) || Devices > Insert Guest aditions CD Image
