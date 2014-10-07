@@ -15,7 +15,7 @@
 /vis/scene/add/hits
 
 /vis/sceneHandler/attach
-/vis/scene/add/axes 0. 0. 0. 10. cm
+#/vis/scene/add/axes 0. 0. 0. 10. cm
 
 /vis/viewer/set/targetPoint 0.0 0.0 300.0 mm
 /vis/viewer/set/viewpointThetaPhi 90 0
