@@ -1,7 +1,7 @@
 IPython GEANT4 Linac
 ====================
 
-A GEANT4 Linac written purely in the python environment using IPython notebook.
+A GEANT4 Linac written purely in the python environment using IPython notebook. An example of the ipython notebook running the GEANT4 code can be seen [here](http://nbviewer.ipython.org/github/SimonBiggs/ipython-geant4-linac/blob/master/main.ipynb).
 
 
 Details
