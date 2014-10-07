@@ -10,7 +10,14 @@ fi
 # Dependencies + python 3.4 scipy stack + boost
 # =============================================
 
-apt-get -y install cmake build-essential qt4-dev-tools libxmu-dev libmotif-dev libexpat1-dev python3 python3-pip libboost-all-dev xfonts-75dpi xfonts-100dpi; apt-get -y build-dep ipython3 ipython3-notebook python3-numpy python3-scipy python3-matplotlib python3-pandas python3-nose; pip3 install --upgrade ipython[all] numpy scipy matplotlib pandas nose;
+apt-get -y install cmake build-essential qt4-dev-tools libxmu-dev \
+libmotif-dev libexpat1-dev python3 python3-pip libboost-all-dev \
+xfonts-75dpi xfonts-100dpi
+
+apt-get -y build-dep ipython3 ipython3-notebook python3-numpy \
+python3-scipy python3-matplotlib python3-pandas python3-nose
+
+pip3 install --upgrade ipython[all] numpy scipy matplotlib pandas nose
 
 
 # =====================
