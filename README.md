@@ -17,9 +17,9 @@ Open terminal (ctrl + alt + T)
     
     mkdir ~/github
     cd ~/github
-	  git clone https://github.com/SimonBiggs/ipython-geant4-linac.git
-	  
-	  sudo ~/gihub/ipython-geant4-linac/install.sh
+    git clone https://github.com/SimonBiggs/ipython-geant4-linac.git
+    
+    sudo ~/github/ipython-geant4-linac/install.sh
 
 NOTE: This will take quite some time and use quite a bit of internet data
 
@@ -43,9 +43,9 @@ Boot new Ubuntu machine
 Open terminal (ctrl + alt + T)
 
     sudo apt-get update
-    sudo apt-get upgrade
+    sudo apt-get -y upgrade
 
-    sudo apt-get install build-essential dkms
+    sudo apt-get -y install build-essential dkms
     sudo reboot
 
 (Virtualbox menu) || Devices > Insert Guest aditions CD Image
