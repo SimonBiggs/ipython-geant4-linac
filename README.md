@@ -34,7 +34,19 @@ This will open up the notebook
 Tips for virtual box
 ====================
 Download Ubuntu 14.04 64-bit LTS
+
+dowload virtualbox, use version 2.3.14 if you have antvius installed.
+
 Install virtualbox -- follow wizard
+
+create new virtual machine
+
+ * > 50 gb hard drive
+ * > 4 gb ram
+ * increase video memory
+ * increase cpu
+ * insert ubuntu iso into virtual cd drive
+
 Install Ubuntu 14.04 64-bit LTS inside the virtualbox
 
 
