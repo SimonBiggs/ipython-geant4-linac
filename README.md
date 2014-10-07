@@ -14,21 +14,31 @@ If you are within windows and would like to use this repo first follow the steps
 Setting up the environment
 ==========================
 
-Assuming you have Ubuntu 14.04 64-bit LTS follow these steps to create a working environment:
+Assuming you have Ubuntu 14.04 64-bit LTS follow the steps given here to create a working environment. This will download and install:
 
-Open terminal (ctrl + alt + T)
+ * Python 3.4 scipy stack
+ * All boost-dev
+ * Geant4 9.6.3 with python3.4 environment
+ * All required dependencies for the above three items
 
-    sudo apt-get -y install git
-    
-    mkdir ~/github
-    cd ~/github
-    git clone https://github.com/SimonBiggs/ipython-geant4-linac.git
-    
+Open terminal (ctrl + alt + T) and copy and paste in the following lines, followed by your password:
+
+    sudo apt-get -y install git; \
+    mkdir ~/github; \
+    cd ~/github; \
+    git clone https://github.com/SimonBiggs/ipython-geant4-linac.git; \
     sudo ~/github/ipython-geant4-linac/install.sh
 
 NOTE: This will take quite some time and use quite a bit of internet data. 
 
-If you know what you are doing you should read through the install.sh before running it in case there are any options that disagree with your environment. If you are starting from scratch, don't mind where things are installed, and wouldn't know where to begin installing geant4, then the above method is for you.
+If you know what you are doing you should read through the install.sh before running it in case there are any options that disagree with your environment. 
+
+The above method is for you if:
+
+ * you are starting from scratch, 
+ * don't mind where things are installed, 
+ * and wouldn't know where to begin installing Geant4 
+
 
 Once complete type:
 
@@ -59,12 +69,11 @@ Install Ubuntu 14.04 64-bit LTS inside the virtualbox
 
 Boot new Ubuntu machine
 
-Open terminal (ctrl + alt + T)
+Open terminal (ctrl + alt + T) and copy and paste in the following lines, followed by your password:
 
-    sudo apt-get update
-    sudo apt-get -y upgrade
-
-    sudo apt-get -y install build-essential dkms
+    sudo apt-get update; \
+    sudo apt-get -y upgrade; \
+    sudo apt-get -y install build-essential dkms; \
     sudo reboot
 
 (Virtualbox menu) || Devices > Insert Guest aditions CD Image
