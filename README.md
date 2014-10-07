@@ -28,7 +28,7 @@ Open terminal (ctrl + alt + T)
 
 NOTE: This will take quite some time and use quite a bit of internet data. 
 
-If you know what you are doing you should read through the install.sh before running it in case there are any options that disagree with your environment. if you are starting from scratch, don't mind where things are installed, and wouldn't know where to begin installing geant4, then the above method is for you.
+If you know what you are doing you should read through the install.sh before running it in case there are any options that disagree with your environment. If you are starting from scratch, don't mind where things are installed, and wouldn't know where to begin installing geant4, then the above method is for you.
 
 Once complete type:
 
@@ -42,17 +42,17 @@ Tips for virtualbox
 ===================
 Download [Ubuntu 14.04 64-bit LTS](http://www.ubuntu.com/download/desktop/thank-you?version=14.04.1&architecture=amd64)
 
-Dowload virtualbox. If you are on windows with anitvirus use [version 2.3.14](http://download.virtualbox.org/virtualbox/4.3.12/VirtualBox-4.3.12-93733-Win.exe).
+Download Virtualbox. If you are on Windows with antivirus use [version 2.3.14](http://download.virtualbox.org/virtualbox/4.3.12/VirtualBox-4.3.12-93733-Win.exe).
 
-Install virtualbox -- follow wizard
+Install Virtualbox -- follow wizard
 
 Create new virtual machine
 
  * >= 50 gb hard drive
  * >= 4 gb ram
- * increase video memory
- * increase number of cpus
- * insert ubuntu iso into virtual cd drive
+ * Increase video memory
+ * Increase number of cpus
+ * Insert Ubuntu iso into virtual cd drive
 
 Install Ubuntu 14.04 64-bit LTS inside the virtualbox
 
