@@ -5,7 +5,6 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-
 # =============================================
 # Dependencies + python 3.4 scipy stack + boost
 # =============================================
@@ -51,8 +50,6 @@ http://geant4.cern.ch/support/source/G4SAIDDATA.1.1.tar.gz"
 su $SUDO_USER -c "cd ~/GEANT4/source
 tar -xzf geant4.9.6.p03.tar.gz
 
-cd ~/GEANT4/datafiles
-
 mkdir -p ~/GEANT4/datafiles/extract
 cd ~/GEANT4/datafiles/extract
 
@@ -66,7 +63,7 @@ tar -xzf ../RealSurface.1.0.tar.gz
 tar -xzf ../G4SAIDDATA.1.1.tar.gz"
 
 mkdir -p /usr/local/share/Geant4-9.6.3/data
-cp -r * /usr/local/share/Geant4-9.6.3/data
+cp -r ~/GEANT4/datafiles/extract/* /usr/local/share/Geant4-9.6.3/data
 
 
 # ==============
@@ -82,6 +79,7 @@ cmake ~/GEANT4/source/geant4.9.6.p03 -DGEANT4_BUILD_MULTITHREADED=ON \
 
 make -j`grep -c processor /proc/cpuinfo`"
 
+cd ~/GEANT4/build
 make install
 
 su $SUDO_USER -c "echo ' . geant4.sh' >> ~/.bashrc"
@@ -90,6 +88,8 @@ su $SUDO_USER -c "echo ' . geant4.sh' >> ~/.bashrc"
 # =================================
 # Install GEANT4 Python Environment
 # =================================
+
+fc-cache -f -v
 
 su $SUDO_USER -c "cd ~/GEANT4/source/geant4.9.6.p03/environments/g4py
 sed -e 's/lib64/lib/g' configure > configure_edit_lib64
@@ -129,4 +129,3 @@ python3 -c 'import py_compile; py_compile.compile( ""__init__.py"" )'
 python3 -O -c 'import py_compile; py_compile.compile( ""__init__.py"" )'"
 
 cp -r ~/GEANT4/source/geant4.9.6.p03/environments/g4py/python34/lib/* /usr/local/lib/python3.4/dist-packages/
-
