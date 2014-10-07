@@ -52,7 +52,7 @@ Tips for virtualbox
 ===================
 Download [Ubuntu 14.04 64-bit LTS](http://www.ubuntu.com/download/desktop/thank-you?version=14.04.1&architecture=amd64)
 
-Download Virtualbox. If you are on Windows with antivirus use [version 2.3.14](http://download.virtualbox.org/virtualbox/4.3.12/VirtualBox-4.3.12-93733-Win.exe).
+Download Virtualbox. If you are on Windows with antivirus use [version 2.3.12](http://download.virtualbox.org/virtualbox/4.3.12/VirtualBox-4.3.12-93733-Win.exe).
 
 Install Virtualbox -- follow wizard
 
