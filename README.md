@@ -4,10 +4,15 @@ IPython GEANT4 Linac
 A GEANT4 Linac written purely in the python environment using IPython notebook.
 
 
+Details
+=======
+If you are within windows and would like to use this repo first follow the steps given in [tips for virtualbox](#tips-for-virtualbox) to create an Ubuntu virtual machine, then follow the steps given within [setting up the environment](#setting-up-the-environment) in order to download and install python3.4 scipy stack, boost, and Geant4 9.6.3 with its python3.4 environment.
 
 
-How to install
-==============
+
+
+Setting up the environment
+==========================
 
 Assuming you have Ubuntu 14.04 64-bit LTS follow these steps to create a working environment:
 
@@ -23,7 +28,7 @@ Open terminal (ctrl + alt + T)
 
 NOTE: This will take quite some time and use quite a bit of internet data. 
 
-if you know what you are doing you should read through the install.sh before running it in case there are any options that disagree with your environment. if you are starting from scratch, don't mind where things are installed, and wouldn't know where to begin installing geant4, then the above method is for you.
+If you know what you are doing you should read through the install.sh before running it in case there are any options that disagree with your environment. if you are starting from scratch, don't mind where things are installed, and wouldn't know where to begin installing geant4, then the above method is for you.
 
 Once complete type:
 
@@ -33,20 +38,20 @@ Once complete type:
 This will open up the notebook
 
 
-Tips for virtual box
-====================
-Download Ubuntu 14.04 64-bit LTS
+Tips for virtualbox
+===================
+Download [Ubuntu 14.04 64-bit LTS](http://www.ubuntu.com/download/desktop/thank-you?version=14.04.1&architecture=amd64)
 
-dowload virtualbox, use version 2.3.14 if you have antvius installed.
+Dowload virtualbox. If you are on windows with anitvirus use [version 2.3.14](http://download.virtualbox.org/virtualbox/4.3.12/VirtualBox-4.3.12-93733-Win.exe).
 
 Install virtualbox -- follow wizard
 
-create new virtual machine
+Create new virtual machine
 
- * > 50 gb hard drive
- * > 4 gb ram
+ * >= 50 gb hard drive
+ * >= 4 gb ram
  * increase video memory
- * increase cpu
+ * increase number of cpus
  * insert ubuntu iso into virtual cd drive
 
 Install Ubuntu 14.04 64-bit LTS inside the virtualbox
