@@ -1,6 +1,6 @@
 
 
-/vis/open OGLIX 800x800-0+50
+/vis/open OGLIX 500x500-0+50
 
 /vis/scene/create
 /vis/scene/add/volume
@@ -19,8 +19,6 @@
 
 /vis/viewer/set/targetPoint 0.0 0.0 300.0 mm
 /vis/viewer/set/viewpointThetaPhi 90 0
-/vis/viewer/set/style solid
-/vis/viewer/set/hiddenEdge 1
 
 /vis/viewer/zoom 1
 

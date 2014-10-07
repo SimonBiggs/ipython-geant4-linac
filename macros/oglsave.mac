@@ -1,7 +1,0 @@
-
-
-/vis/viewer/set/style wireframe
-/vis/viewer/set/viewpointThetaPhi 45 45
-
-/vis/ogl/printEPS
-
