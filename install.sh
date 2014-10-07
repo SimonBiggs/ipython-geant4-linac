@@ -5,6 +5,14 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
+
+# =============================================
+# Dependencies + python 3.4 scipy stack + boost
+# =============================================
+
+apt-get -y install cmake build-essential qt4-dev-tools libxmu-dev libmotif-dev libexpat1-dev python3 python3-pip libboost-all-dev xfonts-75dpi xfonts-100dpi; apt-get -y build-dep ipython3 ipython3-notebook python3-numpy python3-scipy python3-matplotlib python3-pandas python3-nose; pip3 install --upgrade ipython[all] numpy scipy matplotlib pandas nose;
+
+
 # =====================
 # Download GEANT4 Files
 # =====================
@@ -56,8 +64,6 @@ cp -r * /usr/local/share/Geant4-9.6.3/data
 # Install GEANT4
 # ==============
 
-apt-get -y install cmake build-essential qt4-dev-tools libxmu-dev libmotif-dev libexpat1-dev
-
 su $SUDO_USER -c "mkdir -p ~/GEANT4/build
 cd ~/GEANT4/build
 
@@ -70,29 +76,10 @@ make install
 su $SUDO_USER -c "echo ' . geant4.sh' >> ~/.bashrc"
 
 
-# ==============================
-# Install python 3.4 scipy stack
-# ==============================
-
-apt-get -y install python3 python3-pip
-
-apt-get -y build-dep ipython3 ipython3-notebook python3-numpy python3-scipy python3-matplotlib python3-pandas python3-nose 
-
-pip3 install --upgrade ipython[all] numpy scipy matplotlib pandas nose
-
-
-# =============
-# Install boost
-# =============
-
-apt-get -y install libboost-all-dev
-
-
 # =================================
 # Install GEANT4 Python Environment
 # =================================
 
-apt-get -y install xfonts-75dpi xfonts-100dpi
 fc-cache -f -v
 
 su $SUDO_USER -c "cd ~/GEANT4/source/geant4.9.6.p03/environments/g4py
