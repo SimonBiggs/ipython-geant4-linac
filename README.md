@@ -27,7 +27,8 @@ Open terminal (ctrl + alt + T) and copy and paste (ctrl + shift + V) in the foll
     mkdir ~/github; \
     cd ~/github; \
     git clone https://github.com/SimonBiggs/ipython-geant4-linac.git; \
-    sudo ~/github/ipython-geant4-linac/install.sh
+    sudo ~/github/ipython-geant4-linac/install.sh; \
+    sudo reboot
 
 NOTE: This will take quite some time and use quite a bit of internet data. 
 
