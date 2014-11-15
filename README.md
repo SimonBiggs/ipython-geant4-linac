@@ -4,6 +4,18 @@ IPython GEANT4 Linac
 A GEANT4 Linac written purely in the python environment using IPython notebook. An example of the ipython notebook running the GEANT4 code can be seen [here](http://nbviewer.ipython.org/github/SimonBiggs/ipython-geant4-linac/blob/master/main.ipynb).
 
 
+Easy install on Windows, Mac, or Linux via Docker
+=================================================
+First install docker, generic instructions found [here](https://docs.docker.com/installation/). If you are on Windows these are the steps:
+ 
+ * Download and run [docker-install.exe](https://github.com/boot2docker/windows-installer/releases/download/v1.3.1/docker-install.exe)
+ * Press [Enter] when asked for an SSH keyphrase
+ * Copy the following into the docker window:
+   * `docker run -p 8888:8888 simonbiggs/geant4`
+   * On your first run this will download GEANT4
+ * Once downloaded type `192.168.59.103:8888` into a [chrome](https://www.google.com/chrome/browser/) or [firefox](https://www.mozilla.org/firefox/new/) browser
+ 
+
 Details
 =======
 If you are within windows and would like to use this repo first follow the steps given in [tips for virtualbox](#tips-for-virtualbox) to create an Ubuntu virtual machine, then follow the steps given within [setting up the environment](#setting-up-the-environment) in order to download and install python3.4 scipy stack, boost, and Geant4 9.6.3 with its python3.4 environment.
