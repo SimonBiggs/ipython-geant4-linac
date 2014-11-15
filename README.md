@@ -9,6 +9,7 @@ Easy install on Windows, Mac, or Linux via Docker
 First install docker, generic instructions found [here](https://docs.docker.com/installation/). If you are on Windows these are the steps:
  
  * Download and run [docker-install.exe](https://github.com/boot2docker/windows-installer/releases/download/v1.3.1/docker-install.exe)
+ * Run Boot2Docker from within the program menu (or desktop)
  * Press [Enter] when asked for an SSH keyphrase
  * Copy the following into the docker window:
    * `docker run -p 8888:8888 simonbiggs/geant4`
