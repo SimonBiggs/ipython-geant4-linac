@@ -12,7 +12,7 @@ First install docker, generic instructions found [here](https://docs.docker.com/
  * Run Boot2Docker from within the program menu (or desktop)
  * Press [Enter] when asked for an SSH keyphrase
  * Copy the following into the docker window:
-   * `docker run -p 8888:8888 simonbiggs/geant4`
+   * `docker run -p 8888:8888 simonbiggs/geant4-examples`
    * On your first run this will download GEANT4
  * Once downloaded type `192.168.59.103:8888` into a [chrome](https://www.google.com/chrome/browser/) or [firefox](https://www.mozilla.org/firefox/new/) browser
  
