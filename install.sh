@@ -11,7 +11,7 @@ fi
 
 apt-get -y install cmake build-essential qt4-dev-tools libxmu-dev \
 libmotif-dev libexpat1-dev python3 python3-pip libboost-all-dev \
-xfonts-75dpi xfonts-100dpi imagemagick
+xfonts-75dpi xfonts-100dpi imagemagick wget
 
 apt-get -y build-dep ipython3 ipython3-notebook python3-numpy \
 python3-scipy python3-matplotlib python3-pandas python3-nose
