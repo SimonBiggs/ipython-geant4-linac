@@ -1,7 +1,7 @@
 IPython GEANT4 Linac
 ====================
 
-A GEANT4 Linac written purely in the python environment using IPython notebook. An example of the ipython notebook running the GEANT4 code can be seen [here](http://nbviewer.ipython.org/github/SimonBiggs/ipython-geant4-linac/blob/master/main.ipynb).
+A GEANT4 Linac written purely in the python environment using IPython notebook. An example of the ipython notebook running the GEANT4 code can be seen [here](http://nbviewer.ipython.org/github/SimonBiggs/ipython-geant4-linac/blob/master/main.ipynb). 
 
 
 Windows 7/8
@@ -16,6 +16,7 @@ In order to install Geant4 within windows you can use Docker. These are the step
    * On your first run this will download GEANT4
  * Once downloaded type `192.168.59.103:8888` into a [chrome](https://www.google.com/chrome/browser/) or [firefox](https://www.mozilla.org/firefox/new/) browser
  
+Be warned that if you use the docker method of installation data will not be saved once you close boot2docker, therefore you need to download the .ipynb files to your computer. These can be uploaded again by dragging and dropping into the browser window.
 
 Mac OS X
 =======
@@ -27,7 +28,8 @@ In order to install Geant4 within Mac OS X you can use Docker. These are the ste
    * `docker run -p 8888:8888 simonbiggs/geant4-examples`
    * On your first run this will download GEANT4
  * Once downloaded type `192.168.59.103:8888` into a [chrome](https://www.google.com/chrome/browser/), [firefox](https://www.mozilla.org/firefox/new/), or safari browser
- 
+
+Be warned that if you use the docker method of installation data will not be saved once you close boot2docker, therefore you need to download the .ipynb files to your computer. These can be uploaded again by dragging and dropping into the browser window.
 
 
 Linux through docker
@@ -38,6 +40,9 @@ Run the following command within the terminal as root:
 `docker run -p 8888:8888 simonbiggs/geant4-examples`
 
 Once downloaded type `localhost:8888` into a [chrome](https://www.google.com/chrome/browser/) or [firefox](https://www.mozilla.org/firefox/new/) browser.
+
+Be warned that if you use the docker method of installation data will not be saved once you close boot2docker, therefore you need to download the .ipynb files to your computer. These can be uploaded again by dragging and dropping into the browser window.
+
 
 
 
