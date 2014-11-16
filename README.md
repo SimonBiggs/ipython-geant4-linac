@@ -34,7 +34,7 @@ Linux through docker
 ====================
 Install docker using the method for your os described [here](https://docs.docker.com/installation/).
 
-Run the following script as root:
+Run the following command within the terminal as root:
 `docker run -p 8888:8888 simonbiggs/geant4-examples`
 
 Once downloaded type `localhost:8888` into a [chrome](https://www.google.com/chrome/browser/) or [firefox](https://www.mozilla.org/firefox/new/) browser.
