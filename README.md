@@ -16,7 +16,7 @@ In order to install Geant4 within windows you can use Docker. These are the step
    * On your first run this will download GEANT4
  * Once downloaded type `192.168.59.103:8888` into a [chrome](https://www.google.com/chrome/browser/) or [firefox](https://www.mozilla.org/firefox/new/) browser
  
-Be warned that if you use the docker method of installation data will not be saved once you close boot2docker, therefore you need to download the .ipynb files to your computer. These can be uploaded again by dragging and dropping into the browser window.
+Be warned that if you use the docker method of installation data will not be saved once you close boot2docker, therefore you need to download the .ipynb files to your computer. These can be uploaded again by dragging and dropping into the browser window when you next start up docker.
 
 Mac OS X
 =======
@@ -29,7 +29,7 @@ In order to install Geant4 within Mac OS X you can use Docker. These are the ste
    * On your first run this will download GEANT4
  * Once downloaded type `192.168.59.103:8888` into a [chrome](https://www.google.com/chrome/browser/), [firefox](https://www.mozilla.org/firefox/new/), or safari browser
 
-Be warned that if you use the docker method of installation data will not be saved once you close boot2docker, therefore you need to download the .ipynb files to your computer. These can be uploaded again by dragging and dropping into the browser window.
+Be warned that if you use the docker method of installation data will not be saved once you close boot2docker, therefore you need to download the .ipynb files to your computer. These can be uploaded again by dragging and dropping into the browser window when you next start up docker.
 
 
 Linux through docker
@@ -41,7 +41,7 @@ Run the following command within the terminal as root:
 
 Once downloaded type `localhost:8888` into a [chrome](https://www.google.com/chrome/browser/) or [firefox](https://www.mozilla.org/firefox/new/) browser.
 
-Be warned that if you use the docker method of installation data will not be saved once you stop the docker process, therefore you need to download the .ipynb files to your computer. These can be uploaded again by dragging and dropping into the browser window.
+Be warned that if you use the docker method of installation data will not be saved once you stop the docker process, therefore you need to download the .ipynb files to your computer. These can be uploaded again by dragging and dropping into the browser window when you next start up docker.
 
 
 
