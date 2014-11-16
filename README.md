@@ -6,7 +6,7 @@ A GEANT4 Linac written purely in the python environment using IPython notebook. 
 
 Windows 7/8
 ===========
-In order to install Geant4 within windows you can use Docker. These are the steps to acheive this:
+In order to install Geant4 within Windows you can use Docker. These are the steps to acheive this:
 
  * Download and run [docker-install.exe](https://github.com/boot2docker/windows-installer/releases/download/v1.3.1/docker-install.exe)
  * Run Boot2Docker from within the program menu (or desktop)
