@@ -37,9 +37,9 @@ Be warned that if you use the docker method of installation data will not be sav
 
 Linux through docker
 ====================
-Install docker using the method for your os described [here](https://docs.docker.com/installation/).
+Install docker using the method for your os described [here](https://docs.docker.com/installation/). An example for Ubuntu 14.10 is by typing `sudo apt-get install docker.io` into a terminal.
 
-Run the following command within the terminal as root:
+Once installed run the following command within terminal as root:
 `docker run -p 8888:8888 simonbiggs/geant4-examples`
 
 Once downloaded type `localhost:8888` into a [chrome](https://www.google.com/chrome/browser/) or [firefox](https://www.mozilla.org/firefox/new/) browser.
