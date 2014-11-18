@@ -1,7 +1,5 @@
 
-
 /vis/open RayTracer
 /vis/rayTracer/headAngle 340.
 /vis/rayTracer/eyePosition 200 200 250  cm
 /vis/rayTracer/trace images/world.jpg
-

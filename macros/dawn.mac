@@ -1,0 +1,22 @@
+
+/vis/open DAWNFILE
+
+/vis/scene/create
+/vis/scene/add/volume
+
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+
+/vis/scene/endOfEventAction accumulate 1000
+
+/vis/scene/add/hits
+
+/vis/sceneHandler/attach
+#/vis/scene/add/axes 0. 0. 0. 10. cm
+
+/vis/viewer/set/targetPoint 0.0 0.0 300.0 mm
+/vis/viewer/set/viewpointThetaPhi 90 0
+
+/vis/viewer/zoom 1

@@ -151,7 +151,7 @@ Viewpoint {
 	Shape {
 		appearance Appearance {
 			material Material {
-				diffuseColor 1 0 0
+				diffuseColor 1 1 1
 				transparency 0.7
 			}
 		}
@@ -291,7 +291,7 @@ Viewpoint {
 	Shape {
 		appearance Appearance {
 			material Material {
-				diffuseColor 1 0 0
+				diffuseColor 1 1 1
 				transparency 0.7
 			}
 		}
@@ -431,7 +431,7 @@ Viewpoint {
 	Shape {
 		appearance Appearance {
 			material Material {
-				diffuseColor 0.3 1 0.3
+				diffuseColor 1 1 1
 				transparency 0.7
 			}
 		}
@@ -493,7 +493,7 @@ Viewpoint {
 	Shape {
 		appearance Appearance {
 			material Material {
-				diffuseColor 0.3 1 0.3
+				diffuseColor 1 1 1
 				transparency 0.7
 			}
 		}
@@ -555,7 +555,7 @@ Viewpoint {
 	Shape {
 		appearance Appearance {
 			material Material {
-				diffuseColor 0.3 1 0.3
+				diffuseColor 1 1 1
 				transparency 0.7
 			}
 		}
@@ -617,7 +617,7 @@ Viewpoint {
 	Shape {
 		appearance Appearance {
 			material Material {
-				diffuseColor 0.3 1 0.3
+				diffuseColor 1 1 1
 				transparency 0.7
 			}
 		}
@@ -679,7 +679,7 @@ Viewpoint {
 	Shape {
 		appearance Appearance {
 			material Material {
-				diffuseColor 0.3 1 0.3
+				diffuseColor 1 1 1
 				transparency 0.7
 			}
 		}
