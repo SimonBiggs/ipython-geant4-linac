@@ -35,8 +35,8 @@ In order to install Geant4 within Mac OS X you can use Docker. These are the ste
 Be warned that if you use the docker method of installation data will not be saved once you close boot2docker, therefore you need to download the .ipynb files to your computer. These can be uploaded again by dragging and dropping into the browser window when you next start up docker.
 
 
-Linux through docker
-====================
+Linux
+=====
 Install docker using the method for your os described [here](https://docs.docker.com/installation/). An example for Ubuntu 14.10 is by typing within the terminal:
 
     sudo apt-get install docker.io
@@ -48,43 +48,3 @@ Once installed run the following command within terminal as root (sudo):
 Once downloaded type `localhost:8888` into a [chrome](https://www.google.com/chrome/browser/) or [firefox](https://www.mozilla.org/firefox/new/) browser.
 
 Be warned that if you use the docker method of installation data will not be saved once you stop the docker process, therefore you need to download the .ipynb files to your computer. These can be uploaded again by dragging and dropping into the browser window when you next start up docker.
-
-
-
-
-Ubuntu 14.04 64-bit LTS -- Not actively supporting this method
-==============================================================
-
-Assuming you have Ubuntu 14.04 64-bit LTS follow the steps given here to create a working environment. This will download and install:
-
- * Python 3.4 scipy stack
- * All boost-dev
- * Geant4 9.6.3 with python3.4 environment
- * All required dependencies for the above three items
-
-Open terminal (ctrl + alt + T) and copy and paste (ctrl + shift + V) in the following lines, followed by enter, then your password:
-
-    sudo apt-get -y install git; \
-    mkdir ~/github; \
-    cd ~/github; \
-    git clone https://github.com/SimonBiggs/ipython-geant4-linac.git; \
-    sudo ~/github/ipython-geant4-linac/install.sh; \
-    sudo reboot
-
-NOTE: This will take quite some time and use quite a bit of internet data. 
-
-If you know what you are doing you should read through the install.sh before running it in case there are any options that disagree with your environment. 
-
-The above method is for you if:
-
- * you are starting from scratch, 
- * don't mind where things are installed, 
- * and wouldn't know where to begin installing Geant4 
-
-
-Once complete type:
-
-    cd ~/github/ipython-geant4-linac
-    ipython3 notebook
-    
-This will open up the notebook
