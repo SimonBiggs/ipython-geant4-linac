@@ -41,7 +41,7 @@ Install docker using the method for your os described [here](https://docs.docker
 
     sudo apt-get install docker.io
     
-Once installed run the following command within terminal as root:
+Once installed run the following command within terminal as root (sudo):
 
     docker run -p 8888:8888 simonbiggs/geant4-examples
 
