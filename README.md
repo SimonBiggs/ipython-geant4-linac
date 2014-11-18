@@ -5,6 +5,7 @@ A GEANT4 Linac written purely in the python environment using IPython notebook. 
 
 Note, the methods outlined below will likely use upwards of 2 GB of data and about 1-2 hours computer time.
 
+If you have any trouble getting this to work first try running `docker pull simonbiggs/geant4-examples` in case I have released an update. If you are still having trouble then feel free to [contact me](mailto:mail@simonbiggs.net) I am more than happy to help.
 
 Windows 7/8
 ===========
@@ -48,8 +49,8 @@ Be warned that if you use the docker method of installation data will not be sav
 
 
 
-Ubuntu 14.04 64-bit LTS
-=======================
+Ubuntu 14.04 64-bit LTS -- Not actively supporting this method
+==============================================================
 
 Assuming you have Ubuntu 14.04 64-bit LTS follow the steps given here to create a working environment. This will download and install:
 
