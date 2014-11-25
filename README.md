@@ -11,7 +11,7 @@ Windows 7/8
 ===========
 In order to install Geant4 within Windows you can use Docker. These are the steps to acheive this:
 
- * Download and run [docker-install.exe](https://github.com/boot2docker/windows-installer/releases/download/v1.3.1/docker-install.exe)
+ * Download and run [docker-install.exe](https://github.com/boot2docker/windows-installer/releases/latest)
  * Run Boot2Docker from within the program menu (or desktop)
  * Press [Enter] when asked for an SSH keyphrase
  * Copy the following into the docker command window:
@@ -25,7 +25,7 @@ Mac OS X
 =======
 In order to install Geant4 within Mac OS X you can use Docker. These are the steps to acheive this:
 
- * Download and run [Boot2Docker-1.3.1.pkg](https://github.com/boot2docker/osx-installer/releases/download/v1.3.1/Boot2Docker-1.3.1.pkg)
+ * Download and run [Boot2Docker-1.3.1.pkg](https://github.com/boot2docker/osx-installer/releases/latest)
  * Run the newly installed Boot2Docker from within your applications folder
  * Copy the following into the docker terminal:
    * `docker run -p 8888:8888 simonbiggs/geant4-examples`
