@@ -25,7 +25,7 @@ Mac OS X
 =======
 In order to install Geant4 within Mac OS X you can use Docker. These are the steps to acheive this:
 
- * Download and run [Boot2Docker-1.3.1.pkg](https://github.com/boot2docker/osx-installer/releases/latest)
+ * Download and run [Boot2Docker](https://github.com/boot2docker/osx-installer/releases/latest)
  * Run the newly installed Boot2Docker from within your applications folder
  * Copy the following into the docker terminal:
    * `docker run -p 8888:8888 simonbiggs/geant4-examples`
